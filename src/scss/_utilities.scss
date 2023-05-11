@@ -1,0 +1,55 @@
+.container {
+    max-width: $normal-limit;
+    margin: auto;
+    overflow: hidden;
+}
+
+.line {
+    background: $primary-color;
+    height: 1.5px;
+}
+
+.btn {
+    height: 2rem;
+    // width: 6.5rem;
+    background: $light-gray-2;
+    border: 1px solid $light-gray-3;
+    border-radius: 5px;
+
+    &:hover {
+        background: $black;
+        color: $light-color;
+        border: none;
+    }
+}
+
+.error {
+    padding: 1rem;
+    background: $light-red;
+    border: 1px solid $dark-red;
+    color: $dark-red;
+}
+
+.success {
+    padding: 1rem;
+    background: $light-green;
+    border: 1px solid $dark-green;
+    color: $dark-green;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    border-bottom: 1px dotted $light-gray-3 ;
+    
+    &:hover {
+        background: $light-color;
+        border-radius: 5px;
+    }
+
+    &-label {
+        display: block;
+        padding: 0.5rem 0;
+    }
+}

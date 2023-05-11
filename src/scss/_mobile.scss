@@ -1,0 +1,32 @@
+@media (max-width: $mobile-limit) {
+    // Utilities
+    .book {
+        display: block;
+        border-bottom: 1px solid $dark-blue;
+
+        &-label {
+            border-bottom: 1px solid $light-gray-3;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    .dispose {
+        display: none;
+    }
+
+    // Main Styling    
+    #main {
+        .insert {
+            grid-template-columns: 1fr 0.5fr 1fr;
+        }
+        
+        .display {
+            &-header {
+                display: none;
+            }
+        }
+    }
+}
